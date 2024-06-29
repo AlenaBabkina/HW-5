@@ -2,8 +2,8 @@ public class Main {
     public static void main(String[] args) {
         {
             System.out.println("Задача 1");
-            int clientOS = 1;
-            if (clientOS == 1) {
+            int clientOS = 0;
+            if (clientOS == 0) {
                 System.out.println("Установите версию приложения для iOS по ссылке");
             } else if (clientOS == 1) {
                 System.out.println("Установите версию приложения для Android");
@@ -15,10 +15,10 @@ public class Main {
         {
             System.out.println("Задача 2");
             int clientPeviceYear = 2010;
-            int clientOS = 1;
+            int clientOS = 0;
             if (clientOS == 0 && clientPeviceYear < 2015) {
                 System.out.println("Установите облегченную версию приложение для iOS по ссылке");
-            } else if (clientOS == 1 && clientPeviceYear >= 2015) {
+            } else if (clientOS == 0 && clientPeviceYear >= 2015) {
                 System.out.println("Установите версию приложения для iOS по ссылке");
             } else if (clientOS == 1 && clientPeviceYear < 2015) {
                 System.out.println("Установите облегченную версию приложение для Android по ссылке");
@@ -43,15 +43,15 @@ public class Main {
 
         {
             System.out.println("Задача 4");
-            int distance = 50;
+            int deliveryDistance = 95;
             int days = 1;
-            if (distance > 100) {
+            if (deliveryDistance > 100) {
                 System.out.println("Доставки нет");
             } else {
-                if (distance > 20) {
+                if (deliveryDistance > 20) {
                     days++;
                 }
-                if (distance > 60) {
+                if (deliveryDistance > 21 && deliveryDistance > 60) {
                     days++;
                 }
                 System.out.println("Потрбуется дней: " + days + " срок доставки");
@@ -60,7 +60,7 @@ public class Main {
 
         {
             System.out.println("Задача 5");
-            int month = 15;
+            int month = 11;
             switch (month) {
                 case 1, 2, 12:
                     System.out.println("Сезон зима");
